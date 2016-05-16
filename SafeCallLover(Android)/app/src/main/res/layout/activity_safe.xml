@@ -1,0 +1,277 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame_button"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.gc.materialdesign.views.ProgressBarCircularIndeterminate
+        android:id="@+id/progressBarCircularIndeterminate"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:background="#1E88E5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:weightSum="1200"
+        tools:context=".SafeNumberActivity">
+
+        <!-- 1. Action Bar -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="100"
+            android:background="@color/maincolor"
+            android:orientation="horizontal"
+            android:weightSum="1000">
+
+            <!-- 1. Icon -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="150">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:paddingTop="5dp"
+                    android:src="@drawable/logo_2" />
+
+            </LinearLayout>
+
+            <!-- 2. App Name -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="650">
+
+                <TextView
+                    android:layout_marginTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:text="SafeCallLover"
+                    android:id="@+id/safetoptv"
+                    android:textColor="@android:color/white"
+                    android:textSize="35dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 2. Background -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="600"
+            android:background="@color/maincolor"
+            android:orientation="vertical"
+            android:weightSum="1000">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="400" />
+
+            <!-- Background Image -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="300"
+                android:orientation="horizontal"
+                android:weightSum="1000">
+
+                <!-- 1. L -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="200" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="600">
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:src="@drawable/topbackground" />
+
+                </LinearLayout>
+                <!-- 2. R -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="200" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="300" />
+        </LinearLayout>
+
+        <!-- 3. Safe Number -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="500"
+            android:orientation="vertical"
+            android:weightSum="1000">
+
+            <!-- 1. Top Blank -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="100" />
+
+            <!-- 2. Situation -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="350"
+                android:orientation="horizontal"
+                android:weightSum="1000">
+
+                <!-- 1. Left -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="100"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="800"
+                    android:gravity="bottom|center">
+
+                    <!-- Situation -->
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:id="@+id/tv_situation"
+                        android:text="Parking"
+                        android:textSize="30dp"
+
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <!-- 3. Left -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="100"/>
+
+            </LinearLayout>
+            <!-- 3. Situation & Num -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="50"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="350"
+                android:orientation="horizontal"
+                android:weightSum="1000">
+
+                <!-- 1. Left -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="100"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="800"
+                    android:gravity="top|center">
+
+                    <!-- Safe Number -->
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:id="@+id/tv_safeNumber"
+                        android:text="00000000000"
+                        android:textSize="30dp"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <!-- 3. Left -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="100"/>
+            </LinearLayout>
+            <!-- 5. Bottom Blank -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="100" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/menu1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        fab:menu_backgroundColor="#ccffffff"
+        fab:menu_colorNormal="@color/darkolivegreen"
+        fab:menu_colorPressed="@color/darkolivegreen"
+        fab:menu_fab_label="Menu"
+        fab:menu_labels_ellipsize="end"
+        fab:menu_labels_singleLine="true">
+
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_edit"
+            fab:fab_label="상태명 등록"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onBtBtnClicked"
+            android:src="@drawable/ic_edit"
+            fab:fab_label="블루투스 연결"
+
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onReRegiBtnClicked"
+            android:src="@drawable/ic_edit"
+            fab:fab_label="재등록하기"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onDeleteBtnClicked"
+            android:src="@drawable/ic_edit"
+            fab:fab_label="해지하기"
+
+            fab:fab_size="mini" />
+    </com.github.clans.fab.FloatingActionMenu>
+</FrameLayout>

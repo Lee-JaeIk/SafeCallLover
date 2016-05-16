@@ -1,0 +1,203 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/maincolor"
+    android:orientation="vertical"
+    android:weightSum="1000"
+    tools:context=".FirstPage">
+
+    <!-- 1. Icon -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="590"
+        android:orientation="vertical"
+        android:weightSum="1000">
+
+        <!-- 1. top -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="150" />
+
+        <!-- 2. Image -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="400"
+            android:orientation="horizontal"
+            android:weightSum="1000">
+
+            <!-- 1. Left -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="50" />
+
+            <!-- 2. Image -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="900">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="SafeCallLover"
+                    android:id="@+id/firstsafe"
+                    android:textColor="@android:color/white"
+                    android:textSize="40dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <!-- 3. Right -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="50" />
+        </LinearLayout>
+
+
+        <!-- 2. Blank -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="450"
+            android:orientation="horizontal"
+            android:weightSum="1000">
+
+            <!-- 1. Left -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="350" />
+
+            <!-- 2. Center -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="300"
+                android:orientation="vertical"
+                android:weightSum="1000">
+
+                <!-- 1. Image -->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="700">
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:src="@drawable/logo_2"/>
+                </LinearLayout>
+
+                <!-- 2. Bottom Blank -->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="300"/>
+
+            </LinearLayout>
+
+            <!-- 3. Right -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="350" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!-- 1-1. Icon Line -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50" />
+
+    <!-- 2. Text -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="100"
+        android:orientation="horizontal"
+        android:weightSum="1000">
+
+        <!-- 1. Left -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="65" />
+
+        <!-- 2. Center -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="870">
+
+            <TextView
+                android:id="@+id/tv_phoneNumber"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="Phone Number"
+                android:textColor="@color/gray"
+
+                android:textSize="30dp" />
+        </LinearLayout>
+        <!-- 3. Right -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="65" />
+
+    </LinearLayout>
+
+    <!-- Button Line -->
+
+
+    <!-- 3. Button -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="140"
+        android:gravity="center|top"
+        android:orientation="horizontal"
+        android:weightSum="1000">
+
+        <!-- 1. Left -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="50" />
+
+        <!-- 2. Button -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="900">
+
+            <com.gc.materialdesign.views.ButtonRectangle
+                android:id="@+id/btn_regist"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="@color/darkolivegreen"
+                android:text="안심번호 등록하기"
+                />
+        </LinearLayout>
+        <!-- 3. Right -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="50" />
+    </LinearLayout>
+
+    <!-- Bottom -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="120" />
+</LinearLayout>

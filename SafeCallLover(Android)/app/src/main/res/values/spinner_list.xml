@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="car_parking">
+        <item>PHONE NUMBER</item>
+        <item>PARKING A WHILE</item>
+        <item>PARKING</item>
+
+    </string-array>
+
+
+</resources>

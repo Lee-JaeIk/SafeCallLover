@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sangwook.jsonproject" >
+
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".SplashScreen"
+            android:label="SafeCallLover"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".HomeActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FirstPage"
+            android:screenOrientation="portrait"
+                    android:theme="@android:style/Theme.NoTitleBar"/>
+
+        <activity android:name=".MainPageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"/>
+
+
+        <activity
+            android:name=".UpdateActivity"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:taskAffinity="br.com.halyson.materialdesign.popup"
+            android:theme="@android:style/Theme.Translucent" />
+
+
+        <activity
+            android:label="@string/floating_action_menu"
+            android:name=".FloatingMenusActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".tutorial.ViewPagerStyle2Activity"
+            android:screenOrientation="portrait"/>
+
+
+    </application>
+
+
+
+</manifest>
